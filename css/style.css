@@ -1,0 +1,66 @@
+:root {
+    -main-blue: #2863BD,
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-30 {
+    top: 30%;
+}
+
+body {
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+section {
+    inset: 0;
+}
+
+tbody tr {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+tbody tr:hover {
+    scale: 1.1;
+}
+
+.box {
+    height: 400px;
+    width: min-content;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+table.table {
+    background-color: transparent;
+    width: 800px;
+}
+
+#transactionChart {
+    width: 400px !important;
+    height: 400px !important;
+}
+
+.color span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.box-color .content {
+    padding: 10px;
+    white-space: nowrap;
+    /* width: 0;
+    padding: 0px;
+    overflow: hidden; */
+}
+
+select.form-control {
+    width: 200px;
+}

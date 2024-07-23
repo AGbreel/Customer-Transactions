@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions</title>
+    <link rel="shortcut icon" href="images/Group+154.png" type="image/x-icon">
+    <!-- Font Awesom Icon -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main text-white position-relative bg-black">
+        <div id="particles-js">
+            <section class="py-5 position-absolute">
+                <div class="container">
+                    <h1 class="my-4 text-center animate__animated animate__bounceInDown">Customer Transactions</h1>
+
+                    <div class="form-group mb-4 animate__animated animate__backInRight animate__delay-2s">
+                        <input type="text" id="customerFilter" class="form-control"
+                            placeholder="Filter by customer name">
+                    </div>
+
+                    <div class="form-group mb-5 animate__animated animate__backInLeft animate__delay-2s">
+                        <input type="number" id="transactionFilter" class="form-control"
+                            placeholder="Filter by transaction amount">
+                    </div>
+
+                    <div class="d-flex flex-wrap animate__animated animate__backInRight animate__delay-3s">
+                        <div class="box me-5">
+                            <table class="table table-striped shadow">
+                                <thead>
+                                    <tr>
+                                        <th>Customer Name</th>
+                                        <th>Transaction Amount</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="customerTableBody"></tbody>
+                            </table>
+                        </div>
+
+                        <div class="chartBox col">
+                            <h2 class="ms-5">Choose Customer to apper the chart of his data</h2>
+                            <div class="chart d-none">
+                                <select class="form-control mx-auto" name="chartType" id="chartType">
+                                    <option value="bar">Bar</option>
+                                    <option value="line">Line</option>
+                                    <option value="doughnut">Doughnut</option>
+                                    <option value="polarArea">PolarArea</option>
+                                    <option value="radar">Radar</option>
+                                </select>
+                                <canvas id="transactionChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="box-color d-flex align-items-start position-absolute top-30 start-0 z-3 animate__animated animate__fadeInLeft">
+                <div class="content bg-white">
+                    <h4 class="text-dark">Pick the color: </h4>
+                    <div class="color text-success">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-gear fs-4 p-2 text-white bg-primary"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/particles.min.js"></script>
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- JQUERY -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
